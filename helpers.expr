@@ -1,0 +1,13 @@
+/* 
+
+Various Snaplogic helper functions to allow more succinct expressions in mapper. 
+@author ncrouch
+@last_mod 18/07/2017 
+@version 1.0
+@license MIT 
+@newest_version https://github.com/snaplogic-nic/public_stuff/
+
+*/
+{
+	readFloat: x => (x.replace(/,/g,'').replace(/-/g,'') * (x.contains('-') ? -1 : 1))
+}
